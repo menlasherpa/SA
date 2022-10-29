@@ -1,0 +1,18 @@
+{
+  "id" : "5fc88565-6935-42b5-b333-76bdcd5fcc09",
+  "request" : {
+    "urlPath" : "/double",
+    "method" : "GET",
+    "queryParameters" : {
+      "number" : {
+        "equalTo" : "3"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "6",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "5fc88565-6935-42b5-b333-76bdcd5fcc09"
+}

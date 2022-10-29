@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: service.MathControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.751 s <<< FAILURE! - in service.MathControllerIntegrationTest
+given_WhenDouble3_ThenReturn6  Time elapsed: 0.317 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at service.MathControllerIntegrationTest.given_WhenDouble3_ThenReturn6(MathControllerIntegrationTest.java:55)
+
+given_WhenAdd2and5_ThenReturn7  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at service.MathControllerIntegrationTest.given_WhenAdd2and5_ThenReturn7(MathControllerIntegrationTest.java:47)
+

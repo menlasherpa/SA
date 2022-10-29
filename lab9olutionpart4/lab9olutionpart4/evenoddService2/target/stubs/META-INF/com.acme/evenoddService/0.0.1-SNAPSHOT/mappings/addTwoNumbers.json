@@ -1,0 +1,21 @@
+{
+  "id" : "994dbea3-8f33-4acf-ae9c-aa5e8b9c4da6",
+  "request" : {
+    "urlPath" : "/add",
+    "method" : "GET",
+    "queryParameters" : {
+      "value1" : {
+        "equalTo" : "2"
+      },
+      "value2" : {
+        "equalTo" : "5"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "7",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "994dbea3-8f33-4acf-ae9c-aa5e8b9c4da6"
+}

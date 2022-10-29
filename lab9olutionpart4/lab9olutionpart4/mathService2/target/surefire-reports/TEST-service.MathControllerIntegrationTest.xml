@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="service.MathControllerIntegrationTest" time="5.751" tests="4" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\springcloudtraining\workspace\mathService2\target\test-classes;C:\springcloudtraining\workspace\mathService2\target\classes;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.2.5.RELEASE\spring-boot-starter-web-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter\2.2.5.RELEASE\spring-boot-starter-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot\2.2.5.RELEASE\spring-boot-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.2.5.RELEASE\spring-boot-autoconfigure-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.2.5.RELEASE\spring-boot-starter-logging-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\vedam\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\vedam\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;C:\Users\vedam\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\Users\vedam\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\vedam\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\vedam\.m2\repository\org\yaml\snakeyaml\1.25\snakeyaml-1.25.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.2.5.RELEASE\spring-boot-starter-json-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.2\jackson-databind-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.2\jackson-annotations-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.2\jackson-core-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.2\jackson-datatype-jdk8-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.2\jackson-datatype-jsr310-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.10.2\jackson-module-parameter-names-2.10.2.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.2.5.RELEASE\spring-boot-starter-tomcat-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.31\tomcat-embed-core-9.0.31.jar;C:\Users\vedam\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.31\tomcat-embed-el-9.0.31.jar;C:\Users\vedam\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.31\tomcat-embed-websocket-9.0.31.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.2.5.RELEASE\spring-boot-starter-validation-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\vedam\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;C:\Users\vedam\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\vedam\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-web\5.2.4.RELEASE\spring-web-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-beans\5.2.4.RELEASE\spring-beans-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-webmvc\5.2.4.RELEASE\spring-webmvc-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-aop\5.2.4.RELEASE\spring-aop-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-context\5.2.4.RELEASE\spring-context-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-expression\5.2.4.RELEASE\spring-expression-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.2.5.RELEASE\spring-boot-starter-test-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-test\2.2.5.RELEASE\spring-boot-test-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.2.5.RELEASE\spring-boot-test-autoconfigure-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\vedam\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\vedam\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\vedam\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\vedam\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\vedam\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\vedam\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\vedam\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.2\junit-jupiter-5.5.2.jar;C:\Users\vedam\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\vedam\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\vedam\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\vedam\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\vedam\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.2\junit-jupiter-params-5.5.2.jar;C:\Users\vedam\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\vedam\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\vedam\.m2\repository\org\mockito\mockito-junit-jupiter\3.1.0\mockito-junit-jupiter-3.1.0.jar;C:\Users\vedam\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\vedam\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\vedam\.m2\repository\org\mockito\mockito-core\3.1.0\mockito-core-3.1.0.jar;C:\Users\vedam\.m2\repository\net\bytebuddy\byte-buddy\1.10.8\byte-buddy-1.10.8.jar;C:\Users\vedam\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.8\byte-buddy-agent-1.10.8.jar;C:\Users\vedam\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\vedam\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\vedam\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-core\5.2.4.RELEASE\spring-core-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-jcl\5.2.4.RELEASE\spring-jcl-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-test\5.2.4.RELEASE\spring-test-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\xmlunit\xmlunit-core\2.6.3\xmlunit-core-2.6.3.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-starter-contract-stub-runner\2.2.2.RELEASE\spring-cloud-starter-contract-stub-runner-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-stub-runner\2.2.2.RELEASE\spring-cloud-contract-stub-runner-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-verifier\2.2.2.RELEASE\spring-cloud-contract-verifier-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\vedam\.m2\repository\com\toomuchcoding\jsonassert\jsonassert\0.4.14\jsonassert-0.4.14.jar;C:\Users\vedam\.m2\repository\com\rackspace\eclipse\webtools\sourceediting\org.eclipse.wst.xml.xpath2.processor\2.1.100\org.eclipse.wst.xml.xpath2.processor-2.1.100.jar;C:\Users\vedam\.m2\repository\edu\princeton\cup\java-cup\10k\java-cup-10k.jar;C:\Users\vedam\.m2\repository\com\ibm\icu\icu4j\4.6\icu4j-4.6.jar;C:\Users\vedam\.m2\repository\org\codehaus\groovy\groovy\2.5.9\groovy-2.5.9.jar;C:\Users\vedam\.m2\repository\org\codehaus\groovy\groovy-nio\2.5.9\groovy-nio-2.5.9.jar;C:\Users\vedam\.m2\repository\org\codehaus\groovy\groovy-json\2.5.9\groovy-json-2.5.9.jar;C:\Users\vedam\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.9\groovy-xml-2.5.9.jar;C:\Users\vedam\.m2\repository\com\github\jknack\handlebars\4.1.2\handlebars-4.1.2.jar;C:\Users\vedam\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\vedam\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\vedam\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.10.2\jackson-dataformat-yaml-2.10.2.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-function-compiler\3.0.3.RELEASE\spring-cloud-function-compiler-3.0.3.RELEASE.jar;C:\Users\vedam\.m2\repository\io\projectreactor\reactor-core\3.3.3.RELEASE\reactor-core-3.3.3.RELEASE.jar;C:\Users\vedam\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\vedam\.m2\repository\org\eclipse\jdt\core\compiler\ecj\4.4.2\ecj-4.4.2.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-function-core\3.0.3.RELEASE\spring-cloud-function-core-3.0.3.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-shade\2.2.2.RELEASE\spring-cloud-contract-shade-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-converters\2.2.2.RELEASE\spring-cloud-contract-converters-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-spec\2.2.2.RELEASE\spring-cloud-contract-spec-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-spec-java\2.2.2.RELEASE\spring-cloud-contract-spec-java-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\vedam\.m2\repository\org\apache\commons\commons-text\1.7\commons-text-1.7.jar;C:\Users\vedam\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-spec-groovy\2.2.2.RELEASE\spring-cloud-contract-spec-groovy-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\eclipse\jgit\org.eclipse.jgit\5.4.2.201908231537-r\org.eclipse.jgit-5.4.2.201908231537-r.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch\0.1.55\jsch-0.1.55.jar;C:\Users\vedam\.m2\repository\com\jcraft\jzlib\1.1.1\jzlib-1.1.1.jar;C:\Users\vedam\.m2\repository\com\googlecode\javaewah\JavaEWAH\1.1.6\JavaEWAH-1.1.6.jar;C:\Users\vedam\.m2\repository\org\bouncycastle\bcpg-jdk15on\1.61\bcpg-jdk15on-1.61.jar;C:\Users\vedam\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.61\bcprov-jdk15on-1.61.jar;C:\Users\vedam\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.61\bcpkix-jdk15on-1.61.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch.agentproxy.sshagent\0.0.9\jsch.agentproxy.sshagent-0.0.9.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch.agentproxy.core\0.0.9\jsch.agentproxy.core-0.0.9.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch.agentproxy.jsch\0.0.9\jsch.agentproxy.jsch-0.0.9.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch.agentproxy.usocket-jna\0.0.9\jsch.agentproxy.usocket-jna-0.0.9.jar;C:\Users\vedam\.m2\repository\net\java\dev\jna\jna\4.5.2\jna-4.5.2.jar;C:\Users\vedam\.m2\repository\net\java\dev\jna\jna-platform\4.5.2\jna-platform-4.5.2.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-wiremock\2.2.2.RELEASE\spring-cloud-contract-wiremock-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\com\github\tomakehurst\wiremock-jre8-standalone\2.26.2\wiremock-jre8-standalone-2.26.2.jar;C:\Users\vedam\.m2\repository\org\apache\httpcomponents\httpclient\4.5.11\httpclient-4.5.11.jar;C:\Users\vedam\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\vedam\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\vedam\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.3.3\maven-resolver-api-1.3.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="user.country.format" value="NL"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\springcloudtraining\jdk1.8.0\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\vedam\AppData\Local\Temp\surefire5594591425664121988\surefirebooter1725077054630724258.jar C:\Users\vedam\AppData\Local\Temp\surefire5594591425664121988 2020-03-15T15-26-34_874-jvmRun1 surefire7476553628894640802tmp surefire_01376705697717867508tmp"/>
+    <property name="surefire.test.class.path" value="C:\springcloudtraining\workspace\mathService2\target\test-classes;C:\springcloudtraining\workspace\mathService2\target\classes;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.2.5.RELEASE\spring-boot-starter-web-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter\2.2.5.RELEASE\spring-boot-starter-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot\2.2.5.RELEASE\spring-boot-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.2.5.RELEASE\spring-boot-autoconfigure-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.2.5.RELEASE\spring-boot-starter-logging-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\vedam\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\vedam\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;C:\Users\vedam\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\Users\vedam\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\vedam\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\vedam\.m2\repository\org\yaml\snakeyaml\1.25\snakeyaml-1.25.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.2.5.RELEASE\spring-boot-starter-json-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.2\jackson-databind-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.2\jackson-annotations-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.2\jackson-core-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.2\jackson-datatype-jdk8-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.2\jackson-datatype-jsr310-2.10.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.10.2\jackson-module-parameter-names-2.10.2.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.2.5.RELEASE\spring-boot-starter-tomcat-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.31\tomcat-embed-core-9.0.31.jar;C:\Users\vedam\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.31\tomcat-embed-el-9.0.31.jar;C:\Users\vedam\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.31\tomcat-embed-websocket-9.0.31.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.2.5.RELEASE\spring-boot-starter-validation-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\vedam\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;C:\Users\vedam\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\vedam\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-web\5.2.4.RELEASE\spring-web-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-beans\5.2.4.RELEASE\spring-beans-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-webmvc\5.2.4.RELEASE\spring-webmvc-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-aop\5.2.4.RELEASE\spring-aop-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-context\5.2.4.RELEASE\spring-context-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-expression\5.2.4.RELEASE\spring-expression-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.2.5.RELEASE\spring-boot-starter-test-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-test\2.2.5.RELEASE\spring-boot-test-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.2.5.RELEASE\spring-boot-test-autoconfigure-2.2.5.RELEASE.jar;C:\Users\vedam\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\vedam\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\vedam\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\vedam\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\vedam\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\vedam\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\vedam\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\vedam\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.2\junit-jupiter-5.5.2.jar;C:\Users\vedam\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\vedam\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\vedam\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\vedam\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\vedam\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.2\junit-jupiter-params-5.5.2.jar;C:\Users\vedam\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\vedam\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\vedam\.m2\repository\org\mockito\mockito-junit-jupiter\3.1.0\mockito-junit-jupiter-3.1.0.jar;C:\Users\vedam\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\vedam\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\vedam\.m2\repository\org\mockito\mockito-core\3.1.0\mockito-core-3.1.0.jar;C:\Users\vedam\.m2\repository\net\bytebuddy\byte-buddy\1.10.8\byte-buddy-1.10.8.jar;C:\Users\vedam\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.8\byte-buddy-agent-1.10.8.jar;C:\Users\vedam\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\vedam\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\vedam\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-core\5.2.4.RELEASE\spring-core-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-jcl\5.2.4.RELEASE\spring-jcl-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\spring-test\5.2.4.RELEASE\spring-test-5.2.4.RELEASE.jar;C:\Users\vedam\.m2\repository\org\xmlunit\xmlunit-core\2.6.3\xmlunit-core-2.6.3.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-starter-contract-stub-runner\2.2.2.RELEASE\spring-cloud-starter-contract-stub-runner-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-stub-runner\2.2.2.RELEASE\spring-cloud-contract-stub-runner-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-verifier\2.2.2.RELEASE\spring-cloud-contract-verifier-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\vedam\.m2\repository\com\toomuchcoding\jsonassert\jsonassert\0.4.14\jsonassert-0.4.14.jar;C:\Users\vedam\.m2\repository\com\rackspace\eclipse\webtools\sourceediting\org.eclipse.wst.xml.xpath2.processor\2.1.100\org.eclipse.wst.xml.xpath2.processor-2.1.100.jar;C:\Users\vedam\.m2\repository\edu\princeton\cup\java-cup\10k\java-cup-10k.jar;C:\Users\vedam\.m2\repository\com\ibm\icu\icu4j\4.6\icu4j-4.6.jar;C:\Users\vedam\.m2\repository\org\codehaus\groovy\groovy\2.5.9\groovy-2.5.9.jar;C:\Users\vedam\.m2\repository\org\codehaus\groovy\groovy-nio\2.5.9\groovy-nio-2.5.9.jar;C:\Users\vedam\.m2\repository\org\codehaus\groovy\groovy-json\2.5.9\groovy-json-2.5.9.jar;C:\Users\vedam\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.9\groovy-xml-2.5.9.jar;C:\Users\vedam\.m2\repository\com\github\jknack\handlebars\4.1.2\handlebars-4.1.2.jar;C:\Users\vedam\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\vedam\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\vedam\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\vedam\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.10.2\jackson-dataformat-yaml-2.10.2.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-function-compiler\3.0.3.RELEASE\spring-cloud-function-compiler-3.0.3.RELEASE.jar;C:\Users\vedam\.m2\repository\io\projectreactor\reactor-core\3.3.3.RELEASE\reactor-core-3.3.3.RELEASE.jar;C:\Users\vedam\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\vedam\.m2\repository\org\eclipse\jdt\core\compiler\ecj\4.4.2\ecj-4.4.2.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-function-core\3.0.3.RELEASE\spring-cloud-function-core-3.0.3.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-shade\2.2.2.RELEASE\spring-cloud-contract-shade-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-converters\2.2.2.RELEASE\spring-cloud-contract-converters-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-spec\2.2.2.RELEASE\spring-cloud-contract-spec-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-spec-java\2.2.2.RELEASE\spring-cloud-contract-spec-java-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\vedam\.m2\repository\org\apache\commons\commons-text\1.7\commons-text-1.7.jar;C:\Users\vedam\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-spec-groovy\2.2.2.RELEASE\spring-cloud-contract-spec-groovy-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\org\eclipse\jgit\org.eclipse.jgit\5.4.2.201908231537-r\org.eclipse.jgit-5.4.2.201908231537-r.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch\0.1.55\jsch-0.1.55.jar;C:\Users\vedam\.m2\repository\com\jcraft\jzlib\1.1.1\jzlib-1.1.1.jar;C:\Users\vedam\.m2\repository\com\googlecode\javaewah\JavaEWAH\1.1.6\JavaEWAH-1.1.6.jar;C:\Users\vedam\.m2\repository\org\bouncycastle\bcpg-jdk15on\1.61\bcpg-jdk15on-1.61.jar;C:\Users\vedam\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.61\bcprov-jdk15on-1.61.jar;C:\Users\vedam\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.61\bcpkix-jdk15on-1.61.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch.agentproxy.sshagent\0.0.9\jsch.agentproxy.sshagent-0.0.9.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch.agentproxy.core\0.0.9\jsch.agentproxy.core-0.0.9.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch.agentproxy.jsch\0.0.9\jsch.agentproxy.jsch-0.0.9.jar;C:\Users\vedam\.m2\repository\com\jcraft\jsch.agentproxy.usocket-jna\0.0.9\jsch.agentproxy.usocket-jna-0.0.9.jar;C:\Users\vedam\.m2\repository\net\java\dev\jna\jna\4.5.2\jna-4.5.2.jar;C:\Users\vedam\.m2\repository\net\java\dev\jna\jna-platform\4.5.2\jna-platform-4.5.2.jar;C:\Users\vedam\.m2\repository\org\springframework\cloud\spring-cloud-contract-wiremock\2.2.2.RELEASE\spring-cloud-contract-wiremock-2.2.2.RELEASE.jar;C:\Users\vedam\.m2\repository\com\github\tomakehurst\wiremock-jre8-standalone\2.26.2\wiremock-jre8-standalone-2.26.2.jar;C:\Users\vedam\.m2\repository\org\apache\httpcomponents\httpclient\4.5.11\httpclient-4.5.11.jar;C:\Users\vedam\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\vedam\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\vedam\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.3.3\maven-resolver-api-1.3.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vedam"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\springcloudtraining\jdk1.8.0\jre"/>
+    <property name="basedir" value="C:\springcloudtraining\workspace\mathService2"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\vedam\AppData\Local\Temp\surefire5594591425664121988\surefirebooter1725077054630724258.jar"/>
+    <property name="sun.boot.class.path" value="C:\springcloudtraining\jdk1.8.0\jre\lib\resources.jar;C:\springcloudtraining\jdk1.8.0\jre\lib\rt.jar;C:\springcloudtraining\jdk1.8.0\jre\lib\sunrsasign.jar;C:\springcloudtraining\jdk1.8.0\jre\lib\jsse.jar;C:\springcloudtraining\jdk1.8.0\jre\lib\jce.jar;C:\springcloudtraining\jdk1.8.0\jre\lib\charsets.jar;C:\springcloudtraining\jdk1.8.0\jre\lib\jfr.jar;C:\springcloudtraining\jdk1.8.0\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="vedam"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\springcloudtraining\jdk1.8.0\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\vedam\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\vedam\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="C:\springcloudtraining\workspace\mathService2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\springcloudtraining\jdk1.8.0\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;../jdk1.8.0/jre/bin/server;../jdk1.8.0/jre/bin;../jdk1.8.0/jre/lib/amd64;..\jdk1.8.0\jre\bin;C:\springcloudtraining\sts-3.9.7.RELEASE;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="C:\springcloudtraining\jdk1.8.0\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="given_WhenDouble3_ThenReturn6" classname="service.MathControllerIntegrationTest" time="0.317">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at service.MathControllerIntegrationTest.given_WhenDouble3_ThenReturn6(MathControllerIntegrationTest.java:55)
+]]></failure>
+    <system-out><![CDATA[15:26:35.833 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:26:35.848 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:26:35.879 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [service.MathControllerIntegrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:26:35.895 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [service.MathControllerIntegrationTest], using SpringBootContextLoader
+15:26:35.899 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [service.MathControllerIntegrationTest]: class path resource [service/MathControllerIntegrationTest-context.xml] does not exist
+15:26:35.900 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [service.MathControllerIntegrationTest]: class path resource [service/MathControllerIntegrationTestContext.groovy] does not exist
+15:26:35.900 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [service.MathControllerIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:26:35.900 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [service.MathControllerIntegrationTest]: MathControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:26:35.944 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [service.MathControllerIntegrationTest]
+15:26:36.011 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\springcloudtraining\workspace\mathService2\target\classes\service\MathServiceApplication.class]
+15:26:36.012 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration service.MathServiceApplication for test class service.MathControllerIntegrationTest
+15:26:36.097 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [service.MathControllerIntegrationTest]: using defaults.
+15:26:36.097 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener]
+15:26:36.111 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+15:26:36.111 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+15:26:36.112 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3e08ff24, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d1c005e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@8462f31, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@24569dba, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5ddeb7cb, org.springframework.test.context.event.EventPublishingTestExecutionListener@70ed52de, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@496bc455, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@59402b8f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7188af83, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6be968ce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7c37508a, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@247310d0, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@1033576a]
+15:26:36.117 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1972e513 testClass = MathControllerIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7ae0a9ec testClass = MathControllerIntegrationTest, locations = '{}', classes = '{class service.MathServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@35841320 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.json.JsonTestersAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.cloud.contract.stubrunner.spring.StubRunnerConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.StubRunnerSpringCloudAutoConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.ribbon.StubRunnerRibbonAutoConfiguration, org.springframework.cloud.contract.stubrunner.messaging.integration.StubRunnerIntegrationConfiguration, org.springframework.cloud.contract.stubrunner.messaging.jms.StubRunnerJmsConfiguration, org.springframework.cloud.contract.stubrunner.messaging.stream.StubRunnerStreamConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.zookeeper.StubRunnerSpringCloudZookeeperAutoConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.eureka.StubRunnerSpringCloudEurekaAutoConfiguration, org.springframework.cloud.contract.stubrunner.spring.cloud.consul.StubRunnerSpringCloudConsulAutoConfiguration, org.springframework.cloud.contract.stubrunner.messaging.StubRunnerStreamsIntegrationAutoConfiguration, org.springframework.cloud.contract.stubrunner.messaging.camel.StubRunnerCamelConfiguration, org.springframework.cloud.contract.verifier.messaging.stream.ContractVerifierStreamAutoConfiguration, org.springframework.cloud.contract.verifier.messaging.integration.ContractVerifierIntegrationConfiguration, org.springframework.cloud.contract.verifier.messaging.amqp.ContractVerifierAmqpAutoConfiguration, org.springframework.cloud.contract.verifier.messaging.amqp.RabbitMockConnectionFactoryAutoConfiguration, org.springframework.cloud.contract.verifier.messaging.camel.ContractVerifierCamelConfiguration, org.springframework.cloud.contract.verifier.messaging.jms.ContractVerifierJmsConfiguration, org.springframework.cloud.contract.verifier.messaging.kafka.ContractVerifierKafkaConfiguration, org.springframework.cloud.contract.verifier.messaging.noop.NoOpContractVerifierAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3023df74, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2a65fe7c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7b98f307, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@f042483b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@13c9d689], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+15:26:36.155 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2020-03-15 15:26:36.379  INFO 10308 --- [           main] service.MathControllerIntegrationTest    : Starting MathControllerIntegrationTest on DESKTOP-BVHRK6K with PID 10308 (started by vedam in C:\springcloudtraining\workspace\mathService2)
+2020-03-15 15:26:36.381  INFO 10308 --- [           main] service.MathControllerIntegrationTest    : No active profile set, falling back to default profiles: default
+2020-03-15 15:26:37.252  INFO 10308 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'stubrunner-org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties' of type [org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-15 15:26:37.253  INFO 10308 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.contract.stubrunner.spring.StubRunnerConfiguration' of type [org.springframework.cloud.contract.stubrunner.spring.StubRunnerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-15 15:26:37.259  INFO 10308 --- [           main] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2020-03-15 15:26:37.261  INFO 10308 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2020-03-15 15:26:37.357  INFO 10308 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Desired version is [+] - will try to resolve the latest version
+2020-03-15 15:26:37.372  INFO 10308 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2020-03-15 15:26:37.378  INFO 10308 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.acme:evenoddService:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\vedam\.m2\repository\com\acme\evenoddService\0.0.1-SNAPSHOT\evenoddService-0.0.1-SNAPSHOT-stubs.jar
+2020-03-15 15:26:37.379  INFO 10308 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/vedam/.m2/repository/com/acme/evenoddService/0.0.1-SNAPSHOT/evenoddService-0.0.1-SNAPSHOT-stubs.jar]
+2020-03-15 15:26:37.394  INFO 10308 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\vedam\AppData\Local\Temp\contracts-1584282397379-0]
+2020-03-15 15:26:39.451  INFO 10308 --- [           main] wiremock.org.eclipse.jetty.util.log      : Logging initialized @4257ms to wiremock.org.eclipse.jetty.util.log.Slf4jLog
+2020-03-15 15:26:39.564  INFO 10308 --- [           main] w.org.eclipse.jetty.server.Server        : jetty-9.4.20.v20190813; built: 2019-08-13T21:28:18.144Z; git: 84700530e645e812b336747464d6fbbf370c9a20; jvm 1.8.0_201-b09
+2020-03-15 15:26:39.593  INFO 10308 --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@5995851e{/__admin,null,AVAILABLE}
+2020-03-15 15:26:39.595  INFO 10308 --- [           main] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@21c747a{/,null,AVAILABLE}
+2020-03-15 15:26:39.609  INFO 10308 --- [           main] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@1b410308{HTTP/1.1,[http/1.1]}{0.0.0.0:8090}
+2020-03-15 15:26:39.610  INFO 10308 --- [           main] w.org.eclipse.jetty.server.Server        : Started @4418ms
+2020-03-15 15:26:39.610  INFO 10308 --- [           main] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.acme:evenoddService:0.0.1-SNAPSHOT:stubs] on port 8090
+2020-03-15 15:26:39.905  INFO 10308 --- [tp1680365536-27] w.org.eclipse.jetty.util.TypeUtil        : JVM Runtime does not support Modules
+2020-03-15 15:26:39.917  INFO 10308 --- [tp1680365536-27] w.o.e.j.s.h.ContextHandler.__admin       : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2020-03-15 15:26:39.936  INFO 10308 --- [tp1680365536-27] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/1.8.0_201)]
+Host: [localhost:8090]
+Content-Length: [236]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "acfa2b1b-dfde-4350-977a-5ae14d097c15",
+  "request" : {
+    "url" : "/ping",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "acfa2b1b-dfde-4350-977a-5ae14d097c15"
+}
+
+2020-03-15 15:26:40.051  INFO 10308 --- [tp1680365536-21] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/1.8.0_201)]
+Host: [localhost:8090]
+Content-Length: [238]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "06d1d7b4-03b8-4fdc-afe8-cd0bdb155fea",
+  "request" : {
+    "url" : "/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "06d1d7b4-03b8-4fdc-afe8-cd0bdb155fea"
+}
+
+2020-03-15 15:26:40.110  INFO 10308 --- [tp1680365536-26] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/1.8.0_201)]
+Host: [localhost:8090]
+Content-Length: [429]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "9afc802b-22e2-4cff-a5aa-607fd2dc0db5",
+  "request" : {
+    "urlPath" : "/add",
+    "method" : "GET",
+    "queryParameters" : {
+      "value1" : {
+        "equalTo" : "2"
+      },
+      "value2" : {
+        "equalTo" : "5"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "7",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "9afc802b-22e2-4cff-a5aa-607fd2dc0db5"
+}
+
+2020-03-15 15:26:40.144  INFO 10308 --- [tp1680365536-25] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/1.8.0_201)]
+Host: [localhost:8090]
+Content-Length: [377]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "07ef89ce-93c4-407e-9509-b941eca77ad7",
+  "request" : {
+    "urlPath" : "/double",
+    "method" : "GET",
+    "queryParameters" : {
+      "number" : {
+        "equalTo" : "3"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "6",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "07ef89ce-93c4-407e-9509-b941eca77ad7"
+}
+
+2020-03-15 15:26:40.174  INFO 10308 --- [tp1680365536-27] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/1.8.0_201)]
+Host: [localhost:8090]
+Content-Length: [382]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "b4a05922-d012-4e34-be8e-ddf37752e350",
+  "request" : {
+    "urlPath" : "/validate",
+    "method" : "GET",
+    "queryParameters" : {
+      "number" : {
+        "equalTo" : "2"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "Even",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "b4a05922-d012-4e34-be8e-ddf37752e350"
+}
+
+2020-03-15 15:26:40.188  INFO 10308 --- [tp1680365536-21] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.6 (Java/1.8.0_201)]
+Host: [localhost:8090]
+Content-Length: [381]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  "id" : "413adb97-4121-42a3-9f80-cf40788d646d",
+  "request" : {
+    "urlPath" : "/validate",
+    "method" : "GET",
+    "queryParameters" : {
+      "number" : {
+        "equalTo" : "1"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "Odd",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "413adb97-4121-42a3-9f80-cf40788d646d"
+}
+
+2020-03-15 15:26:40.195  INFO 10308 --- [           main] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.acme:evenoddService:0.0.1-SNAPSHOT:stubs=8090}]
+2020-03-15 15:26:40.199  INFO 10308 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'batchStubRunner' of type [org.springframework.cloud.contract.stubrunner.BatchStubRunner] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-15 15:26:40.680  INFO 10308 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 15:26:40.925  INFO 10308 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-03-15 15:26:40.925  INFO 10308 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-03-15 15:26:40.939  INFO 10308 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 14 ms
+2020-03-15 15:26:40.965  INFO 10308 --- [           main] service.MathControllerIntegrationTest    : Started MathControllerIntegrationTest in 4.801 seconds (JVM running for 5.772)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /double
+       Parameters = {number=[3]}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="given_WhenAdd2and5_ThenReturn7" classname="service.MathControllerIntegrationTest" time="0.011">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at service.MathControllerIntegrationTest.given_WhenAdd2and5_ThenReturn7(MathControllerIntegrationTest.java:47)
+]]></failure>
+    <system-out><![CDATA[
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /add
+       Parameters = {value1=[2], value2=[5]}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="given_WhenPassOddNumberInQueryParam_ThenReturnOdd" classname="service.MathControllerIntegrationTest" time="0.184"/>
+  <testcase name="given_WhenPassEvenNumberInQueryParam_ThenReturnEven" classname="service.MathControllerIntegrationTest" time="0.011"/>
+</testsuite>

@@ -1,0 +1,21 @@
+{
+  "id" : "43707fba-6e17-4475-b34a-986ada4704a0",
+  "request" : {
+    "urlPath" : "/validate",
+    "method" : "GET",
+    "queryParameters" : {
+      "number1" : {
+        "equalTo" : "2"
+      },
+      "number2" : {
+        "equalTo" : "2"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "Even",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "43707fba-6e17-4475-b34a-986ada4704a0"
+}
