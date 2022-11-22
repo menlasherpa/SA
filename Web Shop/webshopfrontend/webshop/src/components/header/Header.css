@@ -1,0 +1,11 @@
+#header{
+    background-color: #eee;
+    color:green;
+    text-align:center;
+    margin-top:0;
+    clear:right
+}
+#right{
+    float:right;
+    margin-right: 15px;
+}
